@@ -1,0 +1,238 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 30px;
+  margin: 0, 100px;
+  background-color: #ffffff;
+}
+.nav {
+  width: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .logo h1 {
+  font-weight: 600;
+  font-family: #000000;
+  color: #000000;
+}
+.nav .logo b {
+  color: #ff511c;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+.nav li {
+  margin-right: 30px;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+.nav ul .active::before {
+  content: " ";
+  width: 50%;
+  height: 3px;
+  display: flex;
+  position: relative;
+  margin-left: 10px;
+  background-color: #ff511c;
+}
+input {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.signUp {
+  background: transparent;
+  border: none;
+  
+}
+.logIn {
+  background: #ff511c;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.content {
+  padding: 30px;
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: 50% auto;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 70px;
+}
+.content .content-left {
+  display: block;
+  width: 100%;
+}
+.content .content-left .info {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+}
+.content .content-left .info h1 {
+  font-size: 60px;
+  font-family: sans-serif;
+  padding-bottom: 70px;
+}
+.content .content-left .info p {
+  font-size: 23px;
+  line-height: 2pc;
+  margin-bottom: 30px;
+  padding-bottom: 70px;
+  font-family: sans-serif;
+}
+.content .content-left button {
+  padding: 10px 23px;
+  background: #ff511c;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content .content-right {
+  display: block;
+  width: 100%;
+}
+.content .content-right img {
+  user-select: none;
+  height: auto;
+  width: 400px;
+  position: relative;
+  animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.catagery {
+  width: 100%;
+  display: flex;
+  /*margin-bottom: 100px;*/
+  justify-content: center;
+}
+.catagery .list-items {
+  width: 90%;
+  position: relative;
+  margin-bottom: 70px;
+}
+.catagery .list-items h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  margin-bottom: 70px;
+}
+.catagery .list-items .card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.catagery .card-list .card {
+  width: 200px;
+  height: auto;
+  display: block;
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+  background: #faad96;
+  outline: 2px solid #ff511c;
+}
+.catagery .card-list .card img {
+  width: 120px;
+  height: 100px;
+  bottom: 210px;
+  left: 40px;
+  object-fit: cover;
+  object-position: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  box-shadow: 0 20px 20px #ffffff;
+  border-radius: 50%;
+  padding-top: 0px;
+}
+.catagery .card-list .card .food-title {
+  padding: 45px 0 10px;
+}
+
+.menu h2,
+.menu h3 {
+  margin-bottom: 20px;
+}
+
+.menu .food-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu .food-item {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.menu .food-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menu .food-item .price {
+  color: #ff6347;
+  font-weight: bold;
+}
+.about,
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact form input,
+.contact form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  width: 300px;
+}
+
+.contact form button {
+  background: #ff6347;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background: #ff511c;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
